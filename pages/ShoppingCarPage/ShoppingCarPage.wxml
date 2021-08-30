@@ -1,0 +1,38 @@
+<!--pages/ShoppingCarPage/ShoppingCarPage.wxml-->
+<view class="body">
+  <view class="CarArea">
+  <van-checkbox-group value="{{multSel}}" bind:change="onChange2">
+   
+  <view class="GoodBox" wx:for="{{shoppingList}}" wx:key="{{index}}">
+    <van-swipe-cell right-width="{{ 65 }}" 
+    bind:close="delthis"
+    async-close
+    data-id="{{item.shoppingid}}">
+    <view class="inner">
+    <van-checkbox name="{{index}}">
+      <view class="imgBox">
+        <image class="img" mode="aspectFit" src="{{item.picurl}}"></image>
+      </view>
+    </van-checkbox>
+      <view class="descpBox">
+        <text>{{item.goodname}}</text>
+        <van-stepper value="{{ item.nums }}" data-id="{{item.shoppingid}}" bind:change="onChange" />
+        <text>￥{{item.goodprice*item.nums}}.00</text>
+      </view>
+    </view>
+      <view class="delArea" slot="right">删除</view>
+     </van-swipe-cell>
+  </view>
+</van-checkbox-group>
+</view>
+<view class="OptionArea">
+  <text>没有更多了</text>
+</view>
+<van-submit-bar
+  disabled="{{allowPay}}"
+  price="{{ totalprice*100 }}"
+  button-text="去付款"
+  bind:submit="goPurchase"
+/>
+<van-toast id="van-toast" />
+</view>

@@ -1,0 +1,22 @@
+<!--pages/OrderPage/OrderPage.wxml-->
+<view class="orderArea">
+  <view class="orderBox" wx:for="{{orderList}}" wx:key="index">
+    <view class="orderBoxTitle">
+      订单号：{{item.orderdetailid}}
+    </view>
+    <view class="orderDetail">
+      订单状态：{{item.status}}
+    </view>
+    <view class="orderPixBox">
+      <image class="img" mode="aspectFit" src="{{item.picurl}}"></image>
+      <view class="descr">
+        <view>{{item.goodname}}</view>
+        <view>x{{item.nums}}</view>
+      </view>
+    </view>
+    <view class="dateArea">
+      <view class="dateText">订单创建时间：{{item.dateCreate}}</view>
+    </view>
+  </view>
+</view>
+

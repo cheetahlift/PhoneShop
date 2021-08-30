@@ -1,0 +1,25 @@
+/* pages/OrderPage/OrderPage.wxss */
+.orderArea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.orderBox{
+  width: 95%;
+  border:solid 1rpx #AAAAAA;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  margin-bottom: 15rpx;
+  border-radius: 30rpx;
+  box-shadow: 5rpx 5rpx 5rpx #AAAAAA;
+}
+.orderDetail{
+  border-bottom: solid 1rpx #555;
+}
+.orderPixBox{
+  display: flex;
+  flex-direction: row;
+}
+.img{
+  width: 20%;
+  height: auto;
+}

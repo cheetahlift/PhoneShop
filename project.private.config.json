@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/LoginPage/LoginPage",
+          "pathName": "pages/LoginPage/LoginPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/UserPage/UserPage",
+          "pathName": "pages/UserPage/UserPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/AddressPage/AddressPage",
+          "pathName": "pages/AddressPage/AddressPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/ShoppingCarPage/ShoppingCarPage",
+          "pathName": "pages/ShoppingCarPage/ShoppingCarPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/OrderPage/OrderPage",
+          "pathName": "pages/OrderPage/OrderPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/PurchasePage/PurchasePage",
+          "pathName": "pages/PurchasePage/PurchasePage",
+          "query": "cacheListid=R39010",
+          "scene": null
+        },
+        {
+          "name": "pages/RecPage/RecPage",
+          "pathName": "pages/RecPage/RecPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/TagPage/TagPage",
+          "pathName": "pages/TagPage/TagPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/SearchPage/SearchPage",
+          "pathName": "pages/SearchPage/SearchPage",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<!--pages/GoodInfoPage/GoodInfoPage.wxml-->
+<!-- <text>pages/GoodInfoPage/GoodInfoPage.wxml</text> -->
+<view class="goodBox">
+  <view class="goodPic">
+    <image src="{{goodInfo.picurl}}" class="img"></image>
+  </view>
+  <view class="goodDetail">
+    <view class="goodname">{{goodInfo.goodname}}</view>
+    <view class="goodprice">
+      <text class="col symbol">￥</text>
+      <text class="col price">{{goodInfo.goodprice}}.00</text>
+      <text class="col symbol"></text>
+    </view>
+  </view>
+  <view class="optionClass">
+    <text>购买数量</text>
+    <van-stepper value="{{ nums }}" bind:change="onChange" />
+  </view>
+  <view class="btnClass">
+    <view></view>
+    <view>
+      <van-button type="default" bind:click="goAddCar">加入购物车</van-button>
+      <van-button type="primary" bind:click="goPurchase">立即购买</van-button>
+    </view>
+  </view>
+  <van-toast id="van-toast" />
+</view>
+

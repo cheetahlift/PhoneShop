@@ -1,0 +1,114 @@
+/* pages/RecPage/RecPage.wxss */
+.homeContainer{
+  background-color: #f5f5f5;
+}
+.searchBtn{
+  width: 98%;
+  height: 60rpx;
+  border: 1rpx solid red;
+  margin-left: 1%;
+  margin-top: 1%;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 60rpx;
+  margin-bottom: 1%;
+}
+.search{
+  padding: 10px;
+  background-color: #ff4400;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput{
+  margin-left: 10px;
+  color: #ffffff;
+  width: 70%;
+  height: 60rpx;
+}
+
+.searchImg{
+  width: 60rpx;
+  height: 60rpx;
+  border: 1rpx solid red;
+}
+
+.search .button{
+  width: 30%;
+}
+
+.swiper_img{
+  width: 100%;
+  /* height: 200px; */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.mySwiperStyle{
+  height: 200px;
+}
+
+
+.subject{
+  background-color: #f1f1ff;
+}
+
+
+.titleBox{
+  width: 100%;
+  text-align: center;
+  padding: 15rpx 0;
+}
+
+.productBox{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  
+}
+
+.product{
+  margin: 0px 10px 10px 10px;
+  border-radius: 15px;
+  padding: 14px;
+  width: 37%;
+  max-width: 150px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.product .imgBox{
+  text-align: center;
+}
+
+.product .imgBox .img{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.product .info{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /*设置对齐模式  vertical--垂直*/
+  -webkit-line-clamp: 2; /*设置多行的行数*/
+}
+
+.product .info .name{
+  font-weight: 500;
+}
+
+.product .info .title{
+  color: #a4a4a4;
+}
+.product .priceBox{
+  margin: 10px 0;
+}
+.product .priceBox .price{
+  color: #ff4400;
+}

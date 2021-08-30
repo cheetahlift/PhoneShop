@@ -1,0 +1,55 @@
+<!--pages/UserPage/UserPage.wxml-->
+
+<view class="subject">
+  
+  <view class="myIconBox">
+    <view class="myIconPicBox">
+      <image bindtap="takephoto" class="myIconPic" src="{{userpic}}"></image>
+    </view>
+    <view class="userNameBox">
+      <text>{{userInfo.username}}</text>
+    </view>
+  </view>
+  
+  <view class="personInfoBox">
+    <view class="personNameBox">
+      <text class="personNameT">订单：</text>
+      <text class="personNameR"></text>
+    </view>
+
+    <view class="orderInfo">
+      <van-grid>
+        <van-grid-item icon="{{item.icon}}" text="{{item.title}}" wx:for="{{orderIcon}}" wx:key="index"/>
+      </van-grid>
+    </view>
+
+    <view class="personCardsBoxRow">
+      <view class="personCardsBox" bindtap="goAddressPage">
+        <text class="personCardsT">管理收货地址</text>
+        <van-icon name="arrow" />
+      </view>
+
+      <view class="personCardsBox" bindtap="goOrderPage">
+        <text class="personCardsT">我的订单</text>
+        <van-icon name="arrow" />
+      </view>
+
+      <view class="personCardsBox">
+        <text class="personCardsT">设置</text>
+        <van-icon name="arrow" />
+        <!-- <text class="personCardsR" bindtap="goOrderPage">点击查看</text> -->
+      </view>
+
+      <view class="personCardsBox">
+        <text class="personCardsT">关于</text>
+        <van-icon name="arrow" />
+      </view>
+    </view>
+
+    <view class="logupButton">
+      <van-button type="danger" bind:click="logOut" custom-style="width:100%">退出登录</van-button>
+    </view>
+  </view>
+
+
+</view>

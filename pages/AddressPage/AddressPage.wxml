@@ -1,0 +1,55 @@
+<!--pages/AddressPage/AddressPage.wxml-->
+<view class="addressList">
+  <van-collapse value="{{ activeNames }}" bind:change="onChangeCollapse">
+    <van-collapse-item title="现有地址：" name="1">
+      <view wx:if="{{hasAddress==true}}">
+        <view class="addressBox" wx:for="{{addressList}}" wx:key="index">
+          <view class="addressTextBox">
+            <text class="myIndexStyle">{{index+1}}</text>
+            <view class="textBox">
+              <text>{{item.address}}</text>
+            </view>
+          </view>
+          <view>
+            <van-button type="info" bind:click="showPopup" data-id="{{item.addressid}}">修改</van-button>
+          <van-button type="danger" bind:click="godelete" data-id="{{item.addressid}}">删除</van-button>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{hasAddress==false}}">
+        暂无数据
+      </view>
+    </van-collapse-item>
+    <van-collapse-item title="添加新地址" name="2">
+      <van-cell-group>
+        <van-field
+          value="{{ newAddress }}"
+          center
+          clearable
+          label="添加新地址"
+          placeholder="地址..."
+          border="{{ false }}"
+          use-button-slot
+          bind:change="onChange"
+        >
+          <van-button slot="button" size="small" type="primary" bind:click="addNewAddress">
+            确认
+          </van-button>
+        </van-field>
+      </van-cell-group>
+    </van-collapse-item>
+  </van-collapse>
+  <van-toast id="van-toast" />
+  <van-popup
+  show="{{ show }}"
+  closeable
+  position="bottom"
+  custom-style="height: 20%"
+  bind:close="onClose"
+>
+<view class="showContent">
+  <input class="showInput" value="{{showContent}}" bindinput="showInput" />  
+  <van-button type="primary" bind:click="updateAddress">修改</van-button>
+</view>
+</van-popup>
+</view>

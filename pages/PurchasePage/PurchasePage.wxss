@@ -1,0 +1,59 @@
+/* pages/PurchasePage/PurchasePage.wxss */
+.title{
+  border-bottom: solid 1rpx #AAAAAA;
+  font-size: 55rpx;
+}
+.spArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.spTop{
+  display: flex;
+  flex-direction: row;
+}
+.spBox{
+  display: flex;
+  flex-direction: row;
+}
+.th1{
+  width: 400rpx;
+  border: solid 1rpx #222222;
+}
+.th2{
+  width: 200rpx;
+  border: solid 1rpx #222222;
+}
+.th3{
+  width: 150rpx;
+  border: solid 1rpx #222222;
+  padding-left: 10rpx;
+}
+.btnGroup{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding-top: 100rpx;
+}
+.addressBox{
+  width: 98%;
+  border: 1rpx solid #AAAAAA;
+  box-shadow: 2rpx 2rpx 2rpx #AAAAAA;
+  border-radius: 15rpx;
+  margin-bottom: 15rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.tips{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: xx-small;
+  color: #AAAAAA;
+}

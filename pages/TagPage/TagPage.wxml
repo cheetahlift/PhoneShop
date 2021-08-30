@@ -1,0 +1,25 @@
+<view class="">
+ 
+ <!--分类导航栏-->
+ <scroll-view class='left-navbar' scroll-y="true">
+   <view wx:for="{{screenArray}}" class="{{ currentTab == index ? 'active' : '' }}" wx:key="unique" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" id="{{index}}" data-screenId="{{item.screenId}}">{{item.screenName}}
+   </view>
+ </scroll-view>
+ <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}">
+   <!--顶部图片-->
+   <view class="goods-banner">
+     <!-- <image class="img-banner" src="{{childrenArray.showImageUrl}}" wx:if="{{childrenArray.showImageUrl}}" mode="scaleToFill"></image> -->
+   </view>
+   <!--商品展示-->
+   <view class="goods-list">
+     <view class="goodsBox" wx:for="{{goodList}}" wx:if="{{item.goodtype==screenType}}" bindtap="goSeeDetail" data-id="{{item.goodid}}" wx:key="index">
+        <image class="goodPic" src="{{item.picurl}}" mode="scaleToFill"></image>
+        <view class="goodDetalBox">
+          <view  class="goodDesc">{{item.goodname}}</view>
+          <text class="goodPrice">￥{{item.goodprice}}.00</text>
+        </view>
+     </view>
+   </view>
+ </scroll-view>
+
+</view>

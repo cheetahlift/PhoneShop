@@ -1,0 +1,94 @@
+/* pages/SignInPage/SignInPage.wxss */
+.signBox{
+  display: flex;
+  width: 100%;
+  height: 155px;
+  justify-content: center;
+  align-items: center;
+}
+.signText{
+  font-size: 100rpx;
+  font-style: normal;
+}
+
+.signinForm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  height: 150px;
+}
+.nameInputForm{
+  order: 1;
+
+}
+.passInputForm{
+  order: 2;
+}
+.nameInput{
+  border:3rpx solid #999999;
+  width: 500rpx;
+  height: 100rpx;
+  border-radius: 10px;
+  margin:0 auto 0 auto;
+}
+.passInput{
+  border:3rpx solid #999999;
+  width: 500rpx;
+  height: 100rpx;
+  border-radius: 10px;
+  margin:0 auto 0 auto;
+}
+
+.btnBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+
+
+}
+
+.subBox{
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: flex-end;
+  height: 95px;
+}
+
+.signBtn{
+  width: 100%;
+  height: 45px;
+}
+.returnBox{
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: flex-end;
+  height: 95px;
+}
+.returnBtn{
+  width: 100%;
+  height: 45px;
+}
+
+.ballBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+}
+.ballPic{
+  width: 50px;
+  height: 50px;
+}

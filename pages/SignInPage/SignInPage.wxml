@@ -1,0 +1,24 @@
+<!--pages/SignInPage/SignInPage.wxml-->
+<view class="signBox">
+  <text class="signText">注册</text>
+</view>
+
+<view class="signinForm">
+  <view class="nameInputForm">
+    <input class="nameInput" name="name" bindinput="nameIn" placeholder="输入用户名" />
+  </view>
+  <view class="passInputForm">
+    <input class="passInput" type="password" name="pass" bindinput="passIn" placeholder="输入密码" />
+  </view>
+</view>
+
+<view class="btnBox">
+
+  <view class="subBox">
+  <button style="width:250rpx" class="signBtn" type="primary" bindtap="goSign" >注册</button>
+</view>
+<view class="returnBox">
+  <button style="width:250rpx" class="returnBtn"  type="default" bindtap="goBack">返回</button>
+</view>
+</view>
+<van-toast id="van-toast" />

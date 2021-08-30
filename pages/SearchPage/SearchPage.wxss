@@ -1,0 +1,77 @@
+/* pages/SearchPage/SearchPage.wxss */
+.body{
+  background-color: #f1f1ff;
+}
+.searchBar{
+  width: 98%;
+  height: 60rpx;
+  border: 1rpx solid red;
+  margin-left: 1%;
+  margin-top: 1%;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.serInput{
+  width: 80%;
+  /* border: 1rpx solid red; */
+  margin-top: 5rpx;
+  margin-left: 25rpx;
+}
+.goSearch{
+  width: 45rpx;
+  height: 60rpx;
+}
+
+
+
+.productBox{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  
+}
+
+.product{
+  margin: 0px 10px 10px 10px;
+  border-radius: 15px;
+  padding: 14px;
+  width: 37%;
+  max-width: 150px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.product .imgBox{
+  text-align: center;
+}
+
+.product .imgBox .img{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.product .info{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /*设置对齐模式  vertical--垂直*/
+  -webkit-line-clamp: 2; /*设置多行的行数*/
+}
+
+.product .info .name{
+  font-weight: 500;
+}
+
+.product .info .title{
+  color: #a4a4a4;
+}
+.product .priceBox{
+  margin: 10px 0;
+}
+.product .priceBox .price{
+  color: #ff4400;
+}

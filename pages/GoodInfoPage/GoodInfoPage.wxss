@@ -1,0 +1,59 @@
+/* pages/GoodInfoPage/GoodInfoPage.wxss */
+
+.goodBox{
+  background-color: #f1f1f1;
+}
+.goodPic{
+  
+  text-align: center;
+  background-color: #fff;
+}
+
+
+
+.goodDetail{
+  margin: 10rpx 20rpx 20rpx;
+  border-radius: 15px;
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.goodDetail .goodname{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 30rpx 0;
+}
+
+.goodDetail .goodprice{
+  margin: 0 0 20rpx;
+}
+
+.goodDetail .goodprice .col{
+  color: #ff4400;
+}
+
+.goodDetail .goodprice .price{
+  font-size: 18px;
+
+}
+
+.goodDetail .goodprice .symbol{
+  font-size: 14px;
+}
+
+.optionClass{
+  margin: 10rpx 20rpx 20rpx;
+  border-radius: 15px;
+  padding:  40rpx;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.btnClass{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30rpx 20rpx;
+  
+}

@@ -1,0 +1,41 @@
+/* pages/ShoppingCarPage/ShoppingCarPage.wxss */
+.CarArea{
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  
+}
+.GoodBox{
+  width: 95%;
+  border:solid 1rpx #AAAAAA;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  margin-bottom: 15rpx;
+  border-radius: 30rpx;
+  box-shadow: 5rpx 5rpx 5rpx #AAAAAA;
+  
+}
+.inner{
+  display: flex;
+  flex-direction: row;
+}
+.img{
+  width: 200rpx;
+  height: 200rpx;
+}
+.descpBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 50rpx;
+}
+.delArea{
+  background-color: red;
+  height: 200rpx;
+  line-height: 200rpx;
+  width: 100rpx;
+  text-align: center;
+  color:#FFF;
+}
+.OptionArea{
+  text-align: center;
+}

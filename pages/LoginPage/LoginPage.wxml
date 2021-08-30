@@ -1,0 +1,26 @@
+<!--pages/LoginPage/LoginPage.wxml-->
+<!-- <text>pages/LoginPage/LoginPage.wxml</text> -->
+
+<view class="loginBox">
+  <text class="loginText">登录</text>
+</view>
+
+<view class="loginForm">
+  <view class="nameInputForm">
+    <input class="nameInput" name="name" bindinput="nameIn" placeholder="输入用户名" />
+  </view>
+  <view class="passInputForm">
+    <input class="passInput" type="password" name="pass" bindinput="passIn" placeholder="输入密码" />
+  </view>
+</view>
+
+<view class="subBox">
+  <button class="subBtn" type="primary" bindtap="goSub" >登录</button>
+</view>
+<view class="signBox">
+  <button class="signBtn" bindtap="goSign">还没有账号？点此注册</button>
+</view>
+
+<!-- <view class="ballBox">
+  <image class="ballPic" src="cloud://cardshop-6gzysltcddb984ec.6361-cardshop-6gzysltcddb984ec-1304709015/icon/ball.png"></image> -->
+<!-- </view> -->

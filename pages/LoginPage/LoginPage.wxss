@@ -1,0 +1,79 @@
+/* pages/LoginPage/LoginPage.wxss */
+
+.loginBox{
+  display: flex;
+  width: 100%;
+  height: 155px;
+  justify-content: center;
+  align-items: center;
+}
+.loginText{
+  font-size: 100rpx;
+  font-style: normal;
+}
+
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  height: 150px;
+}
+.nameInputForm{
+  order: 1;
+
+}
+.passInputForm{
+  order: 2;
+}
+.nameInput{
+  border:3rpx solid #999999;
+  width: 500rpx;
+  height: 100rpx;
+  border-radius: 10px;
+  margin:0 auto 0 auto;
+}
+.passInput{
+  border:3rpx solid #999999;
+  width: 500rpx;
+  height: 100rpx;
+  border-radius: 10px;
+  margin:0 auto 0 auto;
+}
+
+.subBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: flex-end;
+  height: 95px;
+}
+
+.subBtn{
+  height: 45px;
+}
+.signBox{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.signBtn{
+  width: 175px;
+  font-size: 13px;
+  text-decoration:underline;
+}
+
+.ballBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+}
+.ballPic{
+  width: 50px;
+  height: 50px;
+}

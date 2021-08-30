@@ -1,0 +1,99 @@
+{
+  "pages": [
+    "pages/RecPage/RecPage",
+    "pages/TagPage/TagPage",
+    "pages/SearchPage/SearchPage",
+    "pages/UserPage/UserPage",
+    "pages/GoodInfoPage/GoodInfoPage",
+    "pages/OrderPage/OrderPage",
+    "pages/ShoppingCarPage/ShoppingCarPage",
+    "pages/PurchasePage/PurchasePage",
+    "pages/LoginPage/LoginPage",
+    "pages/SignInPage/SignInPage",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/AddressPage/AddressPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#DC143C",
+    "navigationBarTitleText": "易初莲花",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/RecPage/RecPage",
+        "text": "推荐",
+        "iconPath": "Image/home.png",
+        "selectedIconPath": "Image/home_p.png"
+      },
+      {
+        "pagePath": "pages/TagPage/TagPage",
+        "text": "分类",
+        "iconPath": "Image/tag.png",
+        "selectedIconPath": "Image/tag_p.png"
+      },
+      {
+        "pagePath": "pages/ShoppingCarPage/ShoppingCarPage",
+        "text": "购物车",
+        "iconPath": "Image/car.png",
+        "selectedIconPath": "Image/car_p.png"
+      },
+      {
+        "pagePath": "pages/UserPage/UserPage",
+        "text": "我的",
+        "iconPath": "Image/user.png",
+        "selectedIconPath": "Image/user_p.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-collapse": "@vant/weapp/collapse/index",
+    "van-collapse-item": "@vant/weapp/collapse-item/index",
+    "van-circle": "@vant/weapp/circle/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-steps": "@vant/weapp/steps/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-tree-select": "@vant/weapp/tree-select/index",
+    "van-area": "@vant/weapp/area/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-submit-bar": "@vant/weapp/submit-bar/index",
+    "van-goods-action": "@vant/weapp/goods-action/index",
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+    "van-goods-action-button": "@vant/weapp/goods-action-button/index",
+    "van-progress": "@vant/weapp/progress/index"
+  }
+}
